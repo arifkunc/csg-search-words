@@ -31,7 +31,7 @@ public class CsgSearchWordsApplication {
 						.startWithUpperCase(Boolean.TRUE)
 						.build();
 
-				searchWordsService.searchWords(searchCriteria);
+				searchWordsService.searchWords(searchCriteria, args);
 			}
 			break;
 			case 2 :
