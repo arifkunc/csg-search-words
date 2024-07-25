@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
 
 @Service("searchWordsStartWithUpperCaseService")
@@ -31,8 +31,8 @@ public class SearchWordsStartWithUpperCaseService implements SearchWordsService 
                 System.out.println("File " + filePath + " : " + searchResult.size());
                 System.out.println("=========");
 
-            } catch (FileNotFoundException e) {
-                System.out.println("File " + filePath + " is not found");
+            } catch (IOException e) {
+                System.out.println("File " + filePath + " is not found or invalid");
             }
 
         }
