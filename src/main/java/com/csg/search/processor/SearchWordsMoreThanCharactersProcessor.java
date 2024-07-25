@@ -34,6 +34,9 @@ public class SearchWordsMoreThanCharactersProcessor implements SearchWordsProces
             searchResult.addAll(wordList);
         }
 
+        bufferedReader.close();
+        fileReader.close();
+
         return searchResult;
     }
 }
