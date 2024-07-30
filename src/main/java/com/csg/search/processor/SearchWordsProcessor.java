@@ -6,5 +6,5 @@ import java.io.IOException;
 import java.util.List;
 
 public interface SearchWordsProcessor {
-    List<String> getWordsStartWithUpperCase(String filePath, SearchCriteria searchCriteria) throws IOException;
+    List<String> searchWords(String filePath, SearchCriteria searchCriteria) throws IOException;
 }

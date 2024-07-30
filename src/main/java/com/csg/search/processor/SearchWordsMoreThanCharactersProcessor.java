@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 @Service("searchWordsMoreThanCharactersProcessor")
 public class SearchWordsMoreThanCharactersProcessor implements SearchWordsProcessor {
     @Override
-    public List<String> getWordsStartWithUpperCase(String filePath, SearchCriteria searchCriteria) throws IOException {
+    public List<String> searchWords(String filePath, SearchCriteria searchCriteria) throws IOException {
         FileReader fileReader = new FileReader(filePath);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
 

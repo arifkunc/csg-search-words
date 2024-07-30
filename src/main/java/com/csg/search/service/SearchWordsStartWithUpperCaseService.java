@@ -25,7 +25,7 @@ public class SearchWordsStartWithUpperCaseService implements SearchWordsService 
 
         for(String filePath : filePaths){
             try {
-                List<String> searchResult = searchWordsProcessor.getWordsStartWithUpperCase(filePath, searchCriteria);
+                List<String> searchResult = searchWordsProcessor.searchWords(filePath, searchCriteria);
 
                 System.out.println("=========");
                 System.out.println("File " + filePath + " : " + searchResult.size());
